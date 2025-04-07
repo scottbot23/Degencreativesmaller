@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degen Creative</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #fafafa;
+            color: #1d1d1f;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 50;
+        }
+        
+        .nav-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 8px 16px;
+        }
+        
+        .ca-number {
+            position: absolute;
+            left: 16px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .social-links {
+            position: absolute;
+            right: 16px;
+            display: flex;
+            gap: 24px;
+        }
+        
+        .social-icon {
+            width: 20px;
+            height: 20px;
+            color: #666;
+            transition: color 0.2s;
+        }
+        
+        .social-icon:hover {
+            color: #000;
+        }
+        
+        main {
+            padding-top: 64px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 48px;
+        }
+        
+        .logo {
+            max-width: 400px;
+            height: auto;
+        }
+        
+        .section {
+            margin-bottom: 48px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+        
+        .app-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            transition: transform 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .app-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .app-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .app-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        
+        .app-description {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .feature-card {
+            background-color: #f5f5f7;
+            border-radius: 12px;
+            padding: 32px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="ca-number">CA: HUD773DHDY74483HDK8833J</div>
+            <div class="social-links">
+                <a href="https://t.me/degencreative" target="_blank" rel="noopener noreferrer">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm5.6 8.2L16.2 18c-.2.8-1.5.9-1.9.2-.6-.8-1.7-2-2.9-3-.9.8-1.7 1.7-2.3 2.4-.3.4-.9.3-1.1-.1L7 15.2c-.2-.3 0-.8.3-1 1.5-1 3.3-2.3 4.4-3-.8-.8-2.3-2.1-2.8-2.5-.6-.4-.1-1.3.5-1.2 1.2.2 7.5 2.9 8.2 3.2.2.1.3.3.3.5 0 .1 0 .2-.1.3z"/>
+                    </svg>
+                </a>
+                <a href="https://instagram.com/degencreative" target="_blank" rel="noopener noreferrer">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2 0 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3 0-1.6.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2 0-1.3-.1-1.6-.1-4.8s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.6-.1 4.9-.1z"/>
+                    </svg>
+                </a>
+                <a href="mailto:contact@degencreative.com">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M0 3v18h24V3H0zm2 2h20l-10 8L2 5zm0 14V7l10 8 10-8v12H2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="logo-container">
+            <img src="public/degen-creative-logo-updated.png" alt="Degen Creative Logo" class="logo">
+        </div>
+
+        <section class="section">
+            <h2 class="section-title">Upcoming Applications</h2>
+            <div class="apps-grid">
+                <div class="app-card">
+                    <img src="public/death-note.jpg" alt="Death Note App" class="app-image">
+                    <h3 class="app-title">Death Note</h3>
+                    <p class="app-description">IOS/Android app created by community member @BlakeG</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-image" style="background-color: #f5f5f7; display: flex; align-items: center; justify-content: center;">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="#666">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="app-title">Coming Soon</h3>
+                    <p class="app-description">To be revealed</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-image" style="background-color: #f5f5f7; display: flex; align-items: center; justify-content: center;">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="#666">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="app-title">Coming Soon</h3>
+                    <p class="app-description">To be revealed</p>
+                </div>
+                <div class="app-card">
+                    <div class="app-image" style="background-color: #f5f5f7; display: flex; align-items: center; justify-content: center;">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="#666">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="app-title">Coming Soon</h3>
+                    <p class="app-description">To be revealed</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Feature of the Week</h2>
+            <div class="feature-card">
+                <img src="public/memento-mor-icon.png" alt="Memento Mori" class="app-image">
+                <h3 class="app-title">Memento Mori</h3>
+                <p class="app-description">A community focused on real-world applications and collaboration.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 
